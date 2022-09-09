@@ -1,0 +1,213 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Shippori+Antique&family=Shippori+Antique+B1&family=Titillium+Web:ital,wght@1,200&display=swap');
+
+body {
+	font-family: 'Noto Sans', sans-serif;
+}
+
+#loader {
+	width: 100%;
+	height: 100%;
+	color: #FFFFFF;
+	background-color: #2A3855;
+	text-align: center;
+	padding-top: 300px;
+	position: fixed;
+	z-index: 2000;
+}
+
+.colored {
+	color: #FFFFFF;
+}
+
+#bg-topheader {
+	background-color: #2A3855;
+	color: #FFFFFF;
+	font-size: 10pt;
+	font-weight: bold;
+}
+
+#right-topheader {
+	text-align: right;
+}
+
+#section-title { 
+	font-family: 'Shippori Antique', sans-serif;
+	font-size: 34pt !important;
+	color: #2A3855;
+	letter-spacing: 0.01rem;
+}
+
+/*#service-logo-box {
+	width: 100px;
+	height: 100px;
+	border: 1px solid #BAC3CC;
+	border-radius: 100%;
+	margin: 0 auto;
+}*/
+
+.service1 {
+	width: 100px;
+	height: 100px;
+	border: 1px solid #BAC3CC;
+	border-radius: 100%;
+	margin: 0 auto;
+	padding-top: 5%;
+}
+
+.service2 {
+	width: 100px;
+	height: 100px;
+	border: 1px solid #BAC3CC;
+	border-radius: 100%;
+	margin: 0 auto;
+	padding-top: 8%;
+}
+
+.service3 {
+	width: 100px;
+	height: 100px;
+	border: 1px solid #BAC3CC;
+	border-radius: 100%;
+	margin: 0 auto;
+	padding-top: 6%;
+}
+
+.contact-query-btn {
+	background-color: #FDD428;
+	color: #2A3855;
+	border: none;
+}
+
+#rounded-corner {
+	border-radius: 10%;
+}
+
+#rounded-corner-top {
+	border-top-left-radius: 10%;
+	border-top-right-radius: 10%;
+}
+
+.parallax {
+  /* The image used */
+  background-image:url("images/tokyo_japan.jpg");
+    background-blend-mode: darken;
+
+  /* Set a specific height */
+  min-height: 300px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.owl-item .item .img-thumbnail {
+	border: 0;
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+}
+
+
+/*============Media Query for Tab, Laptop, Desktop & Smart TV===============*/
+
+@media (min-width: 1200px){
+
+	.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+	}
+
+	.dropdown:hover>.dropdown-menu{
+	display: block;
+	background-color: #2A3855;
+	color: white;
+	}
+
+	.dropdown-menu>.dropdown-item:hover{
+		color: #2A3855 !important;
+	}
+
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	
+	.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1.5rem;
+    padding-left: .5rem;
+	}
+
+	#bg-topheader {
+		text-align: center;
+	}
+
+	#right-topheader {
+		text-align: center;
+		margin-top: 10px;
+	}
+    
+    .contact-query-btn{
+        padding-right: .25rem;
+        padding-left: .25rem;
+    }
+
+}
+
+/*============Media Query for Mobiles===============*/
+@media (min-width: 1px) and (max-width: 991.98px) {
+
+	#bg-topheader {
+		font-size: 8pt;
+		letter-spacing: 1px;
+		text-align: center;
+	}
+
+	#right-topheader {
+		font-size: 8pt;
+		letter-spacing: 1px;
+		text-align: center;
+		margin-top: 10px;
+	}
+
+	.service1 {
+		width: 100px;
+		height: 100px;
+		border: 1px solid #BAC3CC;
+		border-radius: 100%;
+		margin: 0 auto;
+		padding-top: 2%;
+	}
+
+	.service2 {
+		width: 100px;
+		height: 100px;
+		border: 1px solid #BAC3CC;
+		border-radius: 100%;
+		margin: 0 auto;
+		padding-top: 4%;
+	}
+
+	.service3 {
+		width: 100px;
+		height: 100px;
+		border: 1px solid #BAC3CC;
+		border-radius: 100%;
+		margin: 0 auto;
+		padding-top: 3%;
+	}
+
+	.fa-university, .fa-passport {
+		font-size: 30pt;
+	}
+
+	.fa-desktop {
+		font-size: 25pt;
+	}
+
+}
